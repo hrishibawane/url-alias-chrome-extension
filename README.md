@@ -11,6 +11,6 @@ Set aliases for your frequently visited sites and use them just from the address
 
 ### Examples
 - Add alias and corresponding URL from the extension's popup.
-![popup](https://github.com/hrishibawane/url-alias-chrome-extension/tree/master/screenshots/popup_ss.png)
+![](https://github.com/hrishibawane/url-alias-chrome-extension/tree/master/screenshots/popup_ss.png)
 - Type in ```"hb" + TAB``` in address bar.
 - Type your alias, press ```ENTER```.
