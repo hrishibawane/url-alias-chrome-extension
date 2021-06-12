@@ -1,6 +1,4 @@
-## URL Alias Chrome Extension
-
-![logo](icons/logo128.png)
+## ![logo](icons/logo128.png) URL Alias Chrome Extension
 
 Set aliases for your frequently visited sites and use them just from the address bar
 
