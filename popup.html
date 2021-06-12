@@ -2,19 +2,34 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="style.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	</head>
 	<body>
 		<div>
-			<label for="aliasInput">Alias</label>
-			<input id="aliasInput">
-			<br />
-			<label for="urlInput">URL</label>
-			<input id="urlInput">
-			<br />
-			<button id="saveAlias">Save</button>
-		</div>
-		<div>
-			<p id="prevAliases"></p>
+			<div id="titleArea" class="junbotron jumbotron-fluid">
+				<div class="row">
+					<div class="col-4">
+						<img src="icons/logo48.png">
+					</div>
+					<div class="col-6">
+						<h3>URL Alias Extension</h3>
+					</div>
+				</div>
+			</div>
+			<div id="inputArea">
+				<label for="aliasInput">Alias</label>
+				<input id="aliasInput" type="text" placeholder="Alias">
+				<br />
+				<label for="urlInput">URL</label>
+				<input id="urlInput" type="text" placeholder="URL">
+				<br /><br />
+				<button id="saveAlias" type="button" class="btn btn-primary btn-sm">Save</button>
+			</div>
+			<div id="contentArea">
+				<h5>Aliases in use:</h5>
+				<ul id="prevAliases" class="list-group list-group-flush">
+				</ul>
+			</div>
 		</div>
 		<script src="popup.js"></script>
 	</body>

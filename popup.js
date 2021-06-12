@@ -8,19 +8,6 @@ window.onload = setPrevAliases;
 
 document.getElementById("saveAlias").addEventListener("click", saveNewAlias);
 
-function setPrevAliases() {
-	chrome.storage.sync.get("aliasToURLParsed", ({aliasToURLParsed}) => {
-		aliasToUrlMap = JSON.parse(aliasToURLParsed);
-		var displayStr = "";
-		for (var alias in aliasToUrlMap)
-		{
-			displayStr += alias + ": " + aliasToUrlMap[alias];
-			displayStr += "<br />";
-		}
-		document.getElementById("prevAliases").innerHTML = displayStr;
-	});
-}
-
 function saveNewAlias() {
 	var newAlias = document.getElementById("aliasInput").value;
 	var newUrl = document.getElementById("urlInput").value;
@@ -28,4 +15,21 @@ function saveNewAlias() {
 	var aliasToURLParsed = JSON.stringify(aliasToUrlMap);
 	chrome.storage.sync.set({ aliasToURLParsed });
 	setPrevAliases();
+}
+
+function setPrevAliases() {
+	chrome.storage.sync.get("aliasToURLParsed", ({aliasToURLParsed}) => {
+		aliasToUrlMap = JSON.parse(aliasToURLParsed);
+		var parentElem = document.getElementById("prevAliases");
+		parentElem.innerHTML = "";
+		for (var alias in aliasToUrlMap)
+		{
+			var listTag = document.createElement("li");
+			listTag.className = "list-group-item";
+			var listText = document.createTextNode(alias + ": " + aliasToUrlMap[alias]);
+			listTag.appendChild(listText);
+			parentElem.appendChild(listTag);
+		}
+		//document.getElementById("prevAliases").innerHTML = displayStr;
+	});
 }

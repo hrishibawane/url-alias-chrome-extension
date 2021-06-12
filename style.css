@@ -3,15 +3,36 @@ button {
 	width: 100px;
 	margin: 10px;
 	background-color: lightgreen;
+	font-size: medium;
 }
 
 input {
 	height: 30px;
 	width: auto;
 	margin: 10px;
+	padding: 10px;
+	font-size: medium;
 }
 
 label {
 	font-weight: bold;
+	font-size: medium;
 	margin: 10px;
 }
+
+h2, h5 {
+	margin: 10px;
+	font-weight: bold;
+}
+
+#contentArea, #inputArea {
+	background-color: whitesmoke;
+	padding: 10px;
+}
+
+#titleArea {
+	background-color: lightgrey;
+	padding: 10px;
+}
+
+
