@@ -1,0 +1,17 @@
+button {
+	height: 30px;
+	width: 100px;
+	margin: 10px;
+	background-color: lightgreen;
+}
+
+input {
+	height: 30px;
+	width: auto;
+	margin: 10px;
+}
+
+label {
+	font-weight: bold;
+	margin: 10px;
+}

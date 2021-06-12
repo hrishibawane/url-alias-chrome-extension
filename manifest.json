@@ -1,0 +1,17 @@
+{
+	"name": "URL Alias",
+	"description": "Extension to use aliases for URLs",
+	"version": "1.0",
+	"manifest_version": 3,
+	"background": {
+		"service_worker": "background.js"
+	},
+	"permissions": ["storage", "tabs"],
+	"omnibox": {
+		"keyword": "hb"
+	},
+	"action": {
+		"default_popup": "popup.html"
+	},
+	"author": "Hrishikesh Bawane"
+}
