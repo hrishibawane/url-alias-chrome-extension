@@ -1,6 +1,6 @@
 ## ![logo](icons/logo128.png) URL Alias Chrome Extension
 
-Set aliases for your frequently visited sites and use them just from the address bar
+Set aliases for your frequently visited sites and use them just from the address bar.
 
 ### Installation Steps
 1. Clone the repo (OR download zip from [here](https://github.com/hrishibawane/url-alias-chrome-extension/releases/download/1.0/alias_ext.zip)).
@@ -14,3 +14,5 @@ Set aliases for your frequently visited sites and use them just from the address
 ![popup](screenshots/popup_img.png)
 - Type in ```"hb" + TAB``` in address bar.
 - Type your alias, press ```ENTER```.
+
+Do star the repo if you like it :slightly_smiling_face:
