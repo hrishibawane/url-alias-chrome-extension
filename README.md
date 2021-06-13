@@ -15,4 +15,3 @@ Set aliases for your frequently visited sites and use them just from the address
 - Type in ```"hb" + TAB``` in address bar.
 - Type your alias, press ```ENTER```.
 
-Do star the repo if you like it :slightly_smiling_face:

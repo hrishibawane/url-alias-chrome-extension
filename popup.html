@@ -18,11 +18,14 @@
 			</div>
 			<div id="inputArea">
 				<label for="aliasInput">Alias</label>
-				<input id="aliasInput" type="text" placeholder="Alias">
-				<br />
+				<input id="aliasInput" class="form-control" type="text" placeholder="Alias">
 				<label for="urlInput">URL</label>
-				<input id="urlInput" type="text" placeholder="URL">
-				<br /><br />
+				<div class="input-group mb-3">
+					<input id="urlInput" class="form-control" type="text" placeholder="URL">
+					<div class="input-group-append">
+						<button class="btn btn-outline-secondary" id="copyURL" type="button" data-toggle="tooltip" data-placement="bottom" title="Copy current URL">Copy</button>
+					</div>
+				</div>
 				<button id="saveAlias" type="button" class="btn btn-primary btn-sm">Save</button>
 			</div>
 			<div id="contentArea">

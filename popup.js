@@ -7,6 +7,7 @@ var aliasToUrlMap;
 window.onload = setPrevAliases;
 
 document.getElementById("saveAlias").addEventListener("click", saveNewAlias);
+document.getElementById("copyURL").addEventListener("click", copyCurrentURL);
 
 function saveNewAlias() {
 	var newAlias = document.getElementById("aliasInput").value;
@@ -15,6 +16,13 @@ function saveNewAlias() {
 	var aliasToURLParsed = JSON.stringify(aliasToUrlMap);
 	chrome.storage.sync.set({ aliasToURLParsed });
 	setPrevAliases();
+}
+
+function copyCurrentURL() {
+	var options = {active: true, currentWindow: true};
+	chrome.tabs.query(options, (tabs) => {
+		document.getElementById("urlInput").value = tabs[0].url;
+	});
 }
 
 function setPrevAliases() {
@@ -30,6 +38,5 @@ function setPrevAliases() {
 			listTag.appendChild(listText);
 			parentElem.appendChild(listTag);
 		}
-		//document.getElementById("prevAliases").innerHTML = displayStr;
 	});
 }

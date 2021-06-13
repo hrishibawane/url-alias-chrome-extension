@@ -1,11 +1,15 @@
-button {
+#saveAlias {
 	height: 30px;
-	width: 100px;
+	width: 200px;
 	margin: 10px;
-	background-color: lightgreen;
 	font-size: medium;
 }
 
+button {
+	color: white;
+	padding: 5px;
+}
+/*
 input {
 	height: 30px;
 	width: auto;
@@ -13,7 +17,7 @@ input {
 	padding: 10px;
 	font-size: medium;
 }
-
+*/
 label {
 	font-weight: bold;
 	font-size: medium;
