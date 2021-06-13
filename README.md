@@ -11,7 +11,7 @@ Set aliases for your frequently visited sites and use them just from the address
 
 ### Examples
 - Add alias and corresponding URL from the extension's popup.
-![popup](screenshots/popup_img.png)
+- ![popup](screenshots/popup_img.png)
 - Type in ```"hb" + TAB``` in address bar.
 - Type your alias, press ```ENTER```.
 
